@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<form action="form.php" method="post">    
+    <title> Demo Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+    <div class="banner2">
+        <div class="navbar">
+            <ul id="menulist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="staff.html">Staff profile</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="apply.html">Apply</a></li>
+                <li><a href="spec.html">Job Spec</a></li>
+            </ul>
+
+            <img src="iconfinder_icon-menu_2867922.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="heading">
+        <h1>APPLY HERE</h1>
+    </div>
+
+    <div class="container">  
+        <h1>APPLICATION FORM</h1> 
+        <hr>  
+        <form action="form.php" method="post">    
+        <label> First name: </label>   
+      <input type="text" id="username"  name="firstname" placeholder= "First name" size="15" required />   
+      <label> Middle name: </label>   
+      <input type="text" name="middlename" placeholder="Middle name" size="15" required />   
+      <label> Last name: </label>    
+      <input type="text" name="lastname" placeholder="Last name" size="15"required />   
+      <div>  
+     
+      
+    
+      </select>  
+      </div>  
+      <div>  
+      <label>   
+      Gender :  
+      </label><br>  
+      <input type="radio" value="Male" name="gender" > Male   
+      <input type="radio" value="Female" name="gender"> Female   
+      <input type="radio" value="Other" name="gender"> Other  
+        
+      </div>  
+      <label>   
+      Phone :  
+      </label>  
+       
+      <input type="text" name="phone" placeholder="phone no." size="10" required>   
+      Current Address :  
+      <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+      </textarea>  
+       <label for="email"><b>Email</b></label>  
+       <input type="email" placeholder="Enter Email" name="email" required/>  
+
+       
+        
+          <label for="psw"><b>Password</b></label>  
+          <input type="password" placeholder="Enter Password" name="psw" required>  
+        
+          <label for="psw-repeat"><b>Re-enter Password</b></label>  
+          <input type="password" placeholder="Re-enter Password" name="psw-repeat" required>  
+
+          <label for="CV"><b>Upload CV</b></label>  
+       <input type="file"  name="CV" required/>  
+          
+          <button type="submit" class="applybtn">Apply</button>    
+
+          
+      </form>  
+   
+   
+        
+     
+
+
+
+    </div>
+
+   
+
+    
+  <script>
+        
+    var menulist = document.getElementById("menulist");
+
+    menulist.style.maxHeight = "0px";
+    
+    function togglemenu() {
+       
+       if(menulist.style.maxHeight == "0px")
+       {
+            menulist.style.maxHeight = "130px";
+       }
+       else
+            {
+              menulist.style.maxHeight = "0px";
+            }
+
+
+
+    }
+   
+
+
+ </script>
+
+
+<script>
+
+</script>
+
+
+
+</body>
+</html>

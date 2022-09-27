@@ -1,0 +1,1321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Background image for homepage*/
+  .banner{
+    width: 100%;
+    height: 230vh;
+    background-image:  url(background\ blue.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  /* Background image for job specification page*/
+  .banner1{
+    width: 100%;
+    height: 290vh;
+    background-image:  url(background\ blue.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  /* Background image for application page*/
+  .banner2{
+    
+    width: 100%;
+    height: 250vh;
+    background-image:  url(background\ blue.jpg);
+    background-size: cover;
+    background-position: center;
+  
+  }
+  /* Background image for courses page */
+  .banner3{
+    width: 100%;
+    height: 140vh;
+    background-image:  url(background\ blue.jpg);
+    background-size: cover;
+    background-position: center;
+  
+    
+  }
+  /* Background image for staff profile*/
+  .banner4{
+    width: 100%;
+    height: 160vh;
+    background-image:  url(background\ blue.jpg);
+    background-size: cover;
+    background-position: center;
+  
+  }
+  /* Logo*/
+  .logo{
+    width: 150px;
+    cursor: pointer;
+    left: 100%;
+    margin-left: -80px;
+    cursor: pointer;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  /* Logo hover effect*/
+  .logo:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    }
+  
+  /* Navigation Bar design*/
+  .navbar{
+    width: 85% ;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: sans-serif ;
+    font-weight: bold;
+    right: ;
+    
+  }
+  
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+   position: relative;
+  }
+  
+  .navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style:inherit;
+    font:bold;
+    border-color: lawngreen;
+    
+  }
+  .navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    Background: purple;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+  }
+  .navbar ul li:hover::after{
+    width:100%;
+  }
+  
+  .heading{
+    position: relative;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: lime;
+    font-weight: bold;
+    color: black;
+    
+  }
+  /* heading design*/
+  h1 {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  h1:before,
+  h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 7px solid orange;
+    margin: auto;
+  }
+  
+  
+  /* Home page image*/
+  .homepic{
+  position: absolute;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: ;
+  
+  
+  }
+  /* Home page description*/
+  .homecont{
+    width: 60%;
+    padding: 10px 10px;
+    text-align: justify;
+    position: absolute;
+    top: 30%;
+    left: 67%;
+    transform: translate(-50%,-50%);
+    bottom: 80%;
+    font-size: 20px;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  /* meet the team button*/
+  .buton{
+    background: yellow;
+    color:yellow;
+    border: none;
+    width: 15%;
+    padding: 7px 15px;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -140%;
+    right: 18%;
+    transform: translate(-50%, -50%);
+    
+    
+    text-transform: uppercase;
+    transition: 0.4s;
+    text-align: center;
+    font-weight: bold;
+    
+  
+  }
+  
+  
+  /* hover effect for button*/
+  .buton:hover{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+  
+  }
+  
+  /* Home page map*/
+  .map{
+  
+    position: absolute;
+    top: 370%;
+    left: 6%;
+    width: 40%;
+    height: 260%;
+    
+  
+   
+  }
+  /* map heading*/
+  .location{
+    position: absolute;
+    text-decoration: underline;
+    text-shadow: lime;
+    font-weight: bold;
+    color: purple;
+    bottom: -260%;
+    right: 66%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  /* Leave a message form heading*/
+  .location1{
+    position: absolute;
+    text-decoration: underline;
+    text-shadow: lime;
+    font-weight: bold;
+    color: purple;
+    bottom: -260%;
+    right: 16%;
+    text-transform: uppercase;
+    text-align: center;
+  
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  
+  /* leave a message Form layout design */
+  .wrapper {
+    position: absolute;
+    bottom: -675%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  /* leave a message heading*/
+  .wrapper .title h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  /* display of form*/
+  .message-form {
+    display: flex;
+  }
+  /* input area*/
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg {
+    width: 48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid lightblue;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+  }
+  
+  .msg textarea {
+    height: 190px;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: grey;
+  }
+  ::-moz-placeholder {
+    /* Firefox */
+    color: black;
+  }
+  :-ms-input-placeholder {
+    /* IE */
+    color: grey;
+  }
+  
+  
+  
+  /* drop down menu */
+  .menu-icon{
+    width: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  /* contact form compatibility*/
+  @media screen and (max-width: 600px) {
+    .contact-form {
+      flex-direction: column;
+    }
+    .msg textarea {
+      height: 80px;
+    }
+    .input-fields,
+    .msg {
+      width: 100%;
+    }
+  
+  }
+  
+  /* Compatitbility for mobiles */
+  @media only screen and (max-width: 700px){
+  
+    .navbar ul{
+        width: 100%;
+        background: linear-gradient(black, #ff575a);
+        position: absolute;
+        top: 79px;
+       right: -60%;
+        z-index: 2;
+    }
+  
+    .navbar ul li{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+  
+    .navbar ul li a{
+        color: #fff;
+  
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        left: 80%;
+    }
+  
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .banner{
+        width: 100%;
+        height: 280vh;
+    }
+  
+    .logo{
+        width: 100px;
+        cursor: pointer;
+        
+        margin-left: -20px;
+        cursor: pointer;
+    }
+  
+    .heading{
+        font-size: 10px;
+    }
+  
+    .homecont{
+        position: absolute;
+        top: 120%;
+        font-size: 12px;
+        
+        left: 50%;
+    }
+  
+    .homepic{
+        width: 210px;
+        bottom: -30%;
+        right: 22%;
+        
+    }
+  
+    .location{
+        font-size: 12px;
+        right: 25%;
+        bottom: -270% ;
+    }
+  
+    .location1{
+        font-size: 12px;
+        bottom: -590%;
+        right: 36%;
+    }
+  
+    .buton{
+        display: none;
+     }
+     
+    .footer{
+        background-color:black ;
+       color: #fff;
+    
+    }
+  
+    .requirments{
+        font-size: 10px;
+        margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    }
+    .requirments li {
+        letter-spacing: -.2px;
+        margin: 3px 18px 10px;
+     }
+    
+     .responsibilities{
+         display: block;
+         font-size: 10px;
+  
+     }
+     .responsibilities li{
+        letter-spacing: -.2px;
+        margin: 3px 18px 10px;
+  
+     }
+  
+     .brief{
+        padding: 10px 10px 10px 10px;
+  
+     }
+  
+     
+  
+    .map{
+        width: 85%;
+      
+        
+    
+    }
+  
+    .wrapper{
+        width: 90%;
+        position: absolute;
+        max-width: 290px;
+        bottom: -1000%;
+        left: 50%;
+  
+    }
+  
+    .container{
+        font-size: 50%;
+        border:
+        margin: 3px 0 10px 0; 
+        height: 50%;
+  
+    }
+  
+  .input[type=password], textarea {
+  
+        width:70%;
+        font-size: 10px;
+  
+    }
+    .input[type=text]{
+        font-size: 10px;
+    }
+  
+    #label{
+        font-size: 20px;
+    }
+  
+    .banner2{
+        height: 190vh;
+    }
+  
+    .banner1{
+        height: 170vh;
+    }
+  
+    
+  
+    .footer2{
+        background-color:black ;
+        width: 100%;
+        color: white;
+        position: relative;
+        bottom: -9%;
+    }
+  
+    .footer5{
+        background-color:black ;
+        width: 100%;
+        color: white;
+        position: relative;
+        bottom: -15%;
+    }
+  
+    .staffcon{
+        text-align: center;
+        justify-content: center;
+  
+    }
+  
+    .column{
+    text-align: center;
+    
+    }
+  
+    .img{
+    width: 100px;
+    }
+  
+    .card .btn{
+    padding: 1rem 2.5rem;
+    background-color: green;
+   border-radius: 2rem;
+   margin: 6rem 0;
+   text-transform: uppercase;
+   color: white;
+   font-size: 0.7rem;
+   transition: all .5s;
+   position: absolute;
+   bottom: -50px;
+   left: 105px;
+    }
+  
+   .banner4{
+    height: 350vh;
+    }
+  
+    .colum{
+    font-size: 12px;
+    left: 13%;
+    }
+  
+    .banner3{
+    height: 280vh;
+    }
+  
+    .card1 .btn{
+        padding: 1rem 2.5rem;
+       
+        background-color: black;
+        border-radius: 2rem;
+        margin: 6rem 0;
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.6rem;
+        transition: all .5s;
+        position: absolute;
+        bottom: -60px;
+        left: 85px;
+        
+    
+    }
+  /* courses information */
+    .coursehead{
+        font-size: 13px;
+    }
+  
+    .footer4{
+        background-color:black ;
+        color: white;
+        position: absolute;
+        bottom:-180%;
+       
+    }
+  
+  
+  
+   
+  
+  }
+  
+  
+  /* smoke effect for home page*/
+  .smoke{
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+    
+  }
+  
+  .smoke span
+  {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 8px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(8px);
+    animation-delay: calc(var(--i) * -00.5s);
+  }
+  @keyframes animate
+  {
+    0%
+    {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        transform: translateY(-150px) scaleX(5);
+    }
+    95%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(-300px) scaleX(10);
+    }
+  
+  }
+  
+  /* Application form*/
+  body{  
+    font-family: Calibri, Helvetica, sans-serif;  
+      
+  }  
+  .container {  
+      padding: 50px;  
+    background-color:k;  
+    width: 60%;
+    height: 78%;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+  }  
+    
+  input[type=text], input[type=password],input[type=email], textarea {  
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;  
+  }  
+  input[type=text]:focus, input[type=password]:focus {  
+    background-color: lightgreen;  
+    outline: none;  
+  }  
+   div {  
+              padding: 10px 0;  
+           }  
+  hr {  
+    border: 1px solid #f1f1f1;  
+    margin-bottom: 25px;  
+  }  
+  
+  /* Apply button*/
+  .applybtn {  
+    background-color: #4CAF50;  
+    color: white;  
+    padding: 16px 20px;  
+    margin: 8px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 100%;  
+    opacity: 0.9;  
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }  
+  .applybtn:hover {  
+    opacity: 1;  
+  }  
+  
+  
+      
+  
+  
+  /*staff profile */
+  .card {
+    padding: 40px 40px 40px;
+    padding-bottom: 70px;
+    width: 100%;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+    position: relative;
+    left: 129%;
+    text-align: center;
+    justify-content: center;
+    width: 89%;
+    
+  }
+  /* Courses page cards*/
+  .card1{
+    padding: 2.5rem;
+    padding-bottom: 4.375rem;
+    background-color:orange;
+    box-shadow: 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+   
+    width: 89%;
+   
+    
+    
+  }
+  
+  /* allignemnt for staff profile*/
+  .column{
+    float: left;
+    padding: 3.125rem 3.125rem 3.125rem 3.125rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    right: -6%;
+  }
+  
+  /* allignemnt for courses page*/
+  .colum{
+    float: left;
+    padding: 50px 25px 25px 50px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    position: relative;
+    right: -6%;
+  }
+  
+  /* staff profile image*/
+  .img{
+    display: block;
+    width: 100%;
+    height: 50%;
+    opacity: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    border: 1px solid black;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+   
+  }
+  /* images of courses*/
+  .img1{
+   width: 70%;
+    height: 40%;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 1;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  /* staff profile image hover effect*/
+  .img:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    }
+  
+  /* Courses image hover effect*/
+    .img1:hover {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+        }
+    
+  /* staff profile job role title*/
+  .title {
+    color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+  
+  @media screen and (min-width: 650px) {
+  
+  .column {
+    width: 30%;
+    padding: 20px 20px;
+   
+  }
+  .colum {
+  width: 30%;
+    padding: 20px 20px;
+  }
+   
+  
+  .p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  }
+  
+  .h2{
+    font-family: serif;
+  
+  }
+  
+  .staffcon{
+    font-family: cursive;
+    color: black;
+  
+  }
+  
+  /* contact button in staff profile page*/
+  .card .btn{
+     padding: 1rem 2.5rem;
+   
+    background-color: green;
+    border-radius: 2rem;
+    margin: 6rem 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+    transition: all .5s;
+    position: absolute;
+    bottom: -70px;
+    left: 112px;
+    
+  }
+  /* Read more button for courses page*/
+  .card1 .btn{
+    padding: 1rem 2.5rem;
+   
+    background-color: black;
+    border-radius: 2rem;
+    margin: 6rem 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.9rem;
+    transition: all .5s;
+    position: absolute;
+    bottom: -60px;
+    left: 110px;
+    
+  
+  }
+  
+  .coursehead{
+    color: #454545;
+    font-family: Inter,Helvetica Neue,Arial,sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .card .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, .2);
+    
+  }
+  
+  .card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  .staffhead{
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  
+  }
+  /* Job role heading*/
+  .subhead1{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+  /* Job brief description*/
+  .brief{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: black;
+    font-family: proxima-nova,"helvetica","arial",sans-serif;
+    font-size: 20px;
+    line-height: 50.6px;
+    line-height: 3.2rem;
+    right: 20%;
+    left: 10%;
+    padding: 15px 15px 15px 15px;
+  
+  }
+  /* requirements heading*/
+  .subhead2{
+    display: block;
+    font-size: 1.em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 15px 20px 15px 15px;
+    font-family: proxima-nova,"helvetica","arial",sans-serif;
+  }
+  /* Job spec requirements list*/
+  .requirments{
+    display: block;
+    font-size: 1.em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 25px 25px 25px 25px;
+    font-family: "courier, arial, helvetica";
+  
+  }
+  
+  .requirments li {
+    letter-spacing: -.2px;
+    margin: 0px 0px 20px;
+  
+  
+  }
+    
+  
+  /* responsibilities heading*/
+  .subhead3{
+    display: block;
+    font-size: 1.em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 15px 20px 15px 15px;
+    font-family: "courier, arial, helvetica";
+  
+  
+  
+  }
+  
+  /* job spec responsibilities list*/
+  .responsibilities{
+    display: block;
+    font-size: 1.em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 25px 25px 25px 25px;
+    font-family: normal 14px/1.3 "Work Sans","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+  
+  }
+  .responsibilities li {
+    letter-spacing: -.2px;
+    margin: 0px 0px 20px;
+  
+  }
+  
+  /* Footer for home page and staff profile*/
+  .footer {
+   position: relative;
+   left: 0;
+   bottom: -77%;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   
+   
+  }
+  /* Footer for Apply page*/
+  .footer2{
+    position: relative;
+   left: 0;
+   bottom: -10%;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   
+  }
+  
+  /* Footer for Courses page*/
+  .footer4{
+   position:absolute;
+    left: 0;
+    bottom: -40%;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+  }
+  /* Footer for job spec page*/
+  .footer5{
+    position: relative;
+   left: 0;
+   bottom: -10%;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   
+  }
+  
+  /* Footer Text for staff profile, home page, apply page and spec page*/
+  .footertext{
+    position: relative;
+    left: -20%;
+    text-align: justify;
+  }
+  /* Footer for Courses page*/
+  .footertext4{
+    position: relative;
+    left: -2%;
+    text-align: center;
+  }
+  
+  
+  
+  /* background image size for smaller devices */
+  @media screen and (max-width: 790px){
+  
+    .banner{
+        height: 120vh;
+        width: 100%;
+    }
+  
+  }
+  
+  /* Compatibility of smaller devices*/
+  @media screen and (max-width: 999px) {
+    .logo{
+        position: relative;
+    }
+  
+    .homecont{
+        
+        
+        font-size: 16px;
+        bottom: -50%;
+        
+       
+    }
+  
+    .homepic{
+        width: 30%;
+    }
+  
+    .buton{
+        position: absolute;
+        bottom: -87%;
+        width: 20%;
+        
+    }
+  
+    .location{
+        bottom: -160%;
+    }
+  
+    .location1{
+        bottom: -160%;
+    }
+  
+    
+    .wrapper{
+        width: 100%;
+        position: absolute;
+        max-width: 300px;
+        bottom: -597%;
+  }
+  
+  .map{
+    width: 35%;
+    position: absolute;
+    top: 290%;
+  }
+  
+  .column{
+    width: 32%;
+  
+  }
+  
+  .card .btn{
+    padding: 1rem 2.5rem;
+    background-color: green;
+   border-radius: 2rem;
+   margin: 6rem 0;
+   text-transform: uppercase;
+   color: white;
+   font-size: 0.7rem;
+   transition: all .5s;
+   position: absolute;
+   bottom: -65px;
+   left: 70px;
+    }
+  
+    .card1 .btn{
+        padding: 1rem 1.5rem;
+       
+        background-color: black;
+        border-radius: 2rem;
+        margin: 6rem 0;
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.9rem;
+        transition: all .5s;
+        position: absolute;
+        bottom: -60px;
+        left: 56px;
+        }   
+  
+  .banner3{
+    height: 250vh;
+  }
+  
+  .footer4{
+    bottom: -150%;
+    
+  }
+  
+  .card1{
+    width: 84%;
+  }
+  
+  .coursehead{
+   font-size: 14px;
+  }
+  
+  .banner2{
+    height: 290vh;
+  }
+  
+  .banner1{
+    height: 330vh;
+  }
+  
+  }
+  
+  
+  /*  home page image and description for smaller devices*/
+  @media screen and (max-width: 400px) {
+  
+    .homepic{
+        position: absolute;
+        width: 10%;
+        height: 10vh;
+        left: 10%;
+        
+    }
+  
+    .homecont{
+        width: 30%;
+        padding: 10px 10px;
+        text-align: justify;
+        position: absolute;
+        top: 30%;
+        left: 67%;
+        transform: translate(-50%,-50%);
+        bottom: 80%;
+        font-size: 20px;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+  
+    
+  }
+  
+  
+  
+  
+  /* Compatibility For Tablets */
+  @media screen and (max-width: 800px){
+    .navbar ul{
+        width: 100%;
+        background: linear-gradient(black, #ff575a);
+        position: absolute;
+        top: 79px;
+       right: -60%;
+        z-index: 2;
+    }
+  
+    .navbar ul li{
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+  
+    .navbar ul li a{
+        color: #fff;
+  
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        left: 80%;
+    }
+  
+    #menulist{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .banner{
+        height: 200vh ;
+    }
+  
+    .banner1{
+        height: 265vh;
+    }
+    
+    .banner2{
+        height: 215vh;
+    }
+  
+    .banner3{
+        height: 120vh;
+    }
+  
+    .banner4{
+        height: 390vh;
+    }
+  
+    .footer4{
+        bottom: -20%;
+    }
+  
+    .buton{
+        width: 20%;
+        bottom: -130%;
+    }
+  
+    .homepic{
+        bottom: -60%;
+    }
+  
+    .wrapper{
+        max-width: 35%;
+        bottom: -590%;
+    }
+  
+    .location{
+        font-size: 12px;
+        bottom: -180%;
+    }
+  
+    .location1{
+        font-size: 12px;
+        bottom: -180%;
+        right: 13%;
+    }
+  
+    .staffcon{
+        text-align: center;
+        justify-content: center;
+  
+    }
+  
+    .card1 .btn{
+  
+        font-size: 7px;
+        padding: 0.5rem 1rem;
+        
+       
+        
+    }
+    .card1{
+        padding: 2rem;
+    padding-bottom: 4.375rem;
+        
+    }
+  
+    .coursehead{
+        font-size: 9px;
+    }
+  
+    .title{
+        font-size: 12px;
+    }
+  
+    .colum{
+        padding: 15px 15px 15px 15px;
+    }
+  
+    .column{
+        width: 60%;
+        right: -20%;
+    }
+  
+    .card .btn{
+        left: 30%;
+  
+    }
+        
+    
+    
+   
+  
+  }
+  
+  
+  
+  
+  
+  
